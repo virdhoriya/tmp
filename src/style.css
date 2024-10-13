@@ -1,0 +1,428 @@
+/* General styles */
+
+.main-section {
+  padding: 1rem 1.5rem;
+}
+
+.containers {
+  max-width: 140rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.description {
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--white);
+}
+
+.btn2 {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 1.2rem 4rem;
+  background-color: var(--red);
+  color: white;
+  font-weight: 500;
+  border-radius: 0.4rem;
+}
+
+.btn2-dark {
+  background-color: var(--primary-color);
+}
+
+.line {
+  height: 6px;
+  width: 100%;
+  background-color: var(--red);
+}
+
+/*  header */
+
+.logo-img {
+  max-width: 6.5rem;
+  max-height: 6.5rem;
+  border-radius: 0.4rem;
+}
+
+.download-btn {
+  display: inline-block;
+  background-color: var(--red);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.download-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  z-index: 5;
+  background-color: #041b5f;
+  transition: width 0.3s;
+}
+
+.download-btn:hover::before {
+  width: 100%;
+}
+
+.icon {
+  display: inline-block;
+  height: 2.4rem;
+  width: 2.4rem;
+  filter: invert(1);
+}
+
+.nav-section {
+  padding: 0 1.5rem;
+  background-color: var(--primary-color);
+}
+
+.nav-container {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.nav-item {
+  padding: 1.3rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-item img {
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  filter: invert(1);
+}
+
+.nav-item span {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1.1px;
+}
+
+/* banner section */
+
+.banner-section {
+  padding: 17rem 1.5rem 0 1.5rem;
+  background-image: linear-gradient(
+      rgba(51, 51, 51, 0.8),
+      rgba(51, 51, 51, 0.8)
+    ),
+    url("/banner-background-image.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.main-heading {
+  color: var(--white);
+  margin: 0.8rem 0 1.6rem 0;
+  text-align: center;
+  font-size: 6.5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.headin-description {
+  max-width: 84rem;
+  margin: 0 auto;
+}
+
+.btn-container {
+  text-align: center;
+  padding: 2rem 0 0 0;
+}
+
+.banner-img-container {
+  text-align: center;
+}
+
+.banner-img-container img {
+  display: inline-block;
+  max-height: 38.7rem;
+  width: auto;
+}
+
+/* our advantage */
+
+.our-advantage-section {
+  padding: 7rem 1.5rem;
+  background-color: #f3f3f3;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.our {
+  color: var(--primary-color);
+}
+
+.adv-head {
+  font-size: 3.3rem;
+  text-align: center;
+  color: var(--red);
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.text {
+  color: #737373;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.adv-card-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.adv-card {
+  flex-basis: 32%;
+  padding: 3.8rem 3rem 3rem 3rem;
+  background-color: var(--white);
+  border-radius: 0.4rem;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  transition-duration: all 0.3s;
+}
+
+.adv-card:hover {
+  animation: up-down 2s infinite;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(1);
+  }
+  50% {
+    transform: translateY(-1.2rem);
+  }
+  100% {
+    transform: translateY(1);
+  }
+}
+
+.adv-card img {
+  display: inline-block;
+  height: 10rem;
+  width: 10rem;
+}
+
+.adv-card h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+/* bonus section */
+
+.bonus-section {
+  padding: 7rem 1.5rem;
+}
+
+.item-1,
+.item-2 {
+  flex: 0 0 49%;
+}
+
+.bonus-img {
+  max-width: 56.7rem;
+  height: auto;
+}
+
+.bonus-section h2,
+.partners-section h2,
+.section-about h2,
+.primary-h2 {
+  font-size: 3.3rem;
+  color: var(--red);
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/* stats section */
+
+.stats-section {
+  padding: 5rem 1.5rem;
+  background-color: var(--primary-color);
+}
+
+.stats-card {
+  padding: 2.5rem 0 1.5rem 0;
+  flex: 0 0 24.5%;
+  background-color: var(--white);
+  border-radius: 4px;
+}
+
+.stats-card h3 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.stats-card p {
+  font-size: 1.8rem;
+  color: #737373;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 3rem;
+  text-align: center;
+}
+
+/* welcome section */
+
+.welcome-section {
+  padding: 3.5rem 1.5rem;
+}
+
+.welcome-img {
+  display: inline-block;
+  min-height: 36.1rem;
+  width: 100%;
+}
+
+/* partners section */
+
+.partners-section {
+  padding: 3.5rem 1.5rem 7rem 1.5rem;
+}
+
+.partner-logo {
+  display: inline-block;
+  height: 13.2rem;
+  width: 26.4rem;
+}
+
+/* description section */
+
+.description-section h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+.description-section p {
+  color: #737373;
+  font-size: 1.8rem;
+}
+
+/* footer */
+
+.footer {
+  border-top: 6px solid var(--red);
+  background-color: var(--primary-color);
+  padding: 7rem 1.5rem;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 12rem;
+}
+
+.footer-nav li {
+  color: var(--white);
+  font-weight: 700;
+}
+
+/* copyright */
+
+.copyright-section {
+  padding: 1rem 1.5rem;
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.footer-logo {
+  display: inline-block;
+  width: 25rem;
+  height: 5.2rem;
+}
+
+/* about */
+
+.section-about {
+  background-image: linear-gradient(
+      rgba(243, 243, 243, 0.8),
+      rgba(243, 243, 243, 0.8)
+    ),
+    url("/banner-background-image.webp");
+  background-size: cover;
+  background-position: center;
+  padding: 10rem;
+  padding: 7rem 1.5rem;
+}
+
+.element {
+    display: inline-block;
+    color: #737373;
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+}
+
+.right-arrow {
+    display: inline-block;
+    height: .8rem;
+    width: auto;
+    filter: invert(0.5);
+}
+
+.adv-bg {
+    background-color: var(--white);
+}
+
+.adv-bg .adv-card {
+    background-color: rgba(243, 243, 243);
+    box-shadow: none;
+}
+
+/* section havefunc */
+
+.section-havefun {
+    padding: 3.5rem 1.5rem 7.5rem 1.5rem;
+}
+
+.games-image {
+    display: inline-block;
+    height: 60rem;
+    width: auto;
+}
+
+.section-havefun p {
+    font-size: 1.8rem;
+    color: #737373;
+    font-weight: 300;
+}
