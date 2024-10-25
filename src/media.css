@@ -1,0 +1,53 @@
+/*****************/
+/*  BELOW 1024px */
+/*****************/
+
+@media (max-width: 64em) {
+  .main-section {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .logo-img {
+    max-width: 6rem;
+    max-height: 6rem;
+  }
+
+  .download-btn {
+    padding: 0.8rem 1.5rem;
+  }
+
+  .icon {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .nav-section {
+    display: none;
+  }
+}
+
+/*****************/
+/*  BELOW 767px */
+/*****************/
+
+@media (max-width: 47.9375em) {
+  .main-section {
+    padding: 1rem 1.5rem;
+    z-index: 999;
+  }
+
+  .logo-img {
+    max-width: 4.5rem;
+    max-height: 4.5rem;
+  }
+
+  .download-btn {
+    padding: 0.7rem 1.4rem;
+    font-size: 1.3rem;
+  }
+
+  .icon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}

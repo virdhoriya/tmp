@@ -3,8 +3,13 @@ const Headline = () => {
     <section className="main-section">
       <div className="containers">
         <div className="flex justify-between items-center">
-          <img src="/logo.png" alt="logo" className="logo-img" />
-          <a className="download-btn">
+          <img src="/logo.png" alt="logo" className="logo-img" loading="lazy" />
+          <a
+            href="vite.svg"
+            download="logo.png"
+            className="download-btn"
+            title="download"
+          >
             <span className="z-10">
               <img src="/download-icon.png" alt="download" className="icon" />
             </span>
