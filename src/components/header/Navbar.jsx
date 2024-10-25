@@ -12,13 +12,15 @@ const Navbar = () => {
                 <span>home</span>
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <img src="/list.png" alt="Home" />
               <span>blog</span>
-            </li>
-            <li className="nav-item">
-              <img src="/game.png" alt="Home" />
-              <span>games</span>
+            </li> */}
+            <li>
+              <Link to="/games" className="nav-item">
+                <img src="/game.png" alt="Home" />
+                <span>games</span>
+              </Link>
             </li>
             <li>
               <Link to="/about" className="nav-item">
@@ -26,9 +28,11 @@ const Navbar = () => {
                 <span>about us</span>
               </Link>
             </li>
-            <li className="nav-item">
-              <img src="/email.png" alt="Home" />
-              <span>faq</span>
+            <li>
+              <Link to="/faq" className="nav-item">
+                <img src="/email.png" alt="Home" />
+                <span>faq</span>
+              </Link>
             </li>
           </ul>
         </nav>

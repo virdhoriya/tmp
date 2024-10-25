@@ -6,11 +6,7 @@ const Headline = () => {
           <img src="/logo.png" alt="logo" className="logo-img" />
           <a className="download-btn">
             <span className="z-10">
-              <img
-                src="/download-icon.png"
-                alt="download"
-                className="icon"
-              />
+              <img src="/download-icon.png" alt="download" className="icon" />
             </span>
             <span className="z-10">downlaod</span>
           </a>

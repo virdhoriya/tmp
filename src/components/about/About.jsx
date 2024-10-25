@@ -110,6 +110,39 @@ const About = () => {
         </div>
       </section>
 
+      <section className="section-faq">
+        <div className="containers">
+          <div className="flex items-center gap-20">
+            <div className="grow flex flex-col gap-20">
+              <h2 className="primary-h2"><span className="our">FREQUENTLY ASK </span>questions</h2>
+              <p className="text text-left">
+                Teen Patti Master is more than simply an app for playing cards; it’s a premium service that gives proficient users the chance to create a personal profile and begin making money by introducing friends and relatives. The following commonly asked questions may help you better understand the Teen Patti Master certification procedure if you’re interested in becoming one:
+              </p>
+              <div className="acc-container">
+                <div className="acc-item">
+                  <h3>How do I become a Teen Patti Master?</h3>
+                </div>
+                <div className="acc-item">
+                  <h3>How long does it take to activate my Teen Patti Master profile?</h3>
+                </div>
+                <div className="acc-item">
+                  <h3>How can I edit my Teen Patti Master profile?</h3>
+                </div>
+                <div className="acc-item">
+                  <h3>Can I complete my Teen Patti Master profile in parts?</h3>
+                </div>
+                <div className="acc-item">
+                  <h3>What are the benefits of being a Teen Patti Master?</h3>
+                </div>
+              </div>
+            </div>
+            <div className="flex-[0_0_45%]">
+              <img src="/faq-img.webp" alt="FAQ" className="faq-img"/>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="partners-section">
         <div className="containers">
           <div className="flex flex-col gap-8">
@@ -126,6 +159,8 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      
     </>
   );
 };
