@@ -1,6 +1,7 @@
 const Home = () => {
   return (
     <main>
+
       <section className="banner-section">
         <div className="containers">
           <div className="flex flex-col gap-8">
@@ -15,7 +16,7 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="btn-container">
+            <div className="text-center">
               <a href="#" className="btn2">
                 download
               </a>
@@ -61,12 +62,12 @@ const Home = () => {
 
       <section className="bonus-section">
         <div className="containers">
-          <div className="flex items-center justify-between">
-            <div className="item-1">
+          <div className="bonus-content">
+            <div className="item-1 text-center">
               <img src="/bonus.webp" alt="" className="bonus-img" />
             </div>
             <div className="item-2">
-              <div className="flex flex-col gap-8 items-start">
+              <div className="bonus-description">
                 <h2>
                   <span className="our">get free </span>bonus
                   <span className="our"> everyday</span>
@@ -97,7 +98,7 @@ const Home = () => {
 
       <section className="stats-section">
         <div className="containers">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between flex-wrap flex-direction-col">
             <div className="stats-card">
               <h3>10,000+</h3>
               <p>register members</p>
@@ -148,24 +149,24 @@ const Home = () => {
 
       <section className="description-section">
         <div className="containers">
-          <div className="flex flex-col gap-8 p-4">
-            <h2>
+          <div className="flex flex-col gap-8 p-4 new-gap">
+            <h2 className="ds-h2">
               Teen Patti Master: The Best Online Game for Teen Patti Players
             </h2>
-            <p>
+            <p className="ds-p">
               You love card games. You relish the thrill of competing with other
               players, the excitement of making strategic decisions, and the
               satisfaction of winning real cash. But have you ever tried playing
               Teen Patti?
             </p>
-            <p>
+            <p className="ds-p">
               If not, you’re missing out on one of South Asia’s most popular and
               enjoyable card games. Teen Patti, translating to “three cards” in
               Hindi, is a dynamic mix of skill, strategy, and luck, offering a
               fast-paced and addictive experience that mirrors the rich and
               diverse culture of its Indian origin.
             </p>
-            <p>
+            <p className="ds-p">
               But don’t worry! You don’t have to travel to India to enjoy this
               game. You can play it online with Teen Patti Master — the best
               online platform for Teen Patti lovers. Beyond a mere game, Teen
@@ -174,8 +175,8 @@ const Home = () => {
               substantial prizes. Exclusive bonuses, promotions, and events add
               an extra layer of excitement to your gaming experience.
             </p>
-            <h2>Unleashing the Real Cash Excitement of the Teen Patti Game</h2>
-            <p>
+            <h2 className="ds-h2">Unleashing the Real Cash Excitement of the Teen Patti Game</h2>
+            <p className="ds-p">
               Imagine you are at a virtual table, holding three cards, partaking
               in a high-stakes cash game with real players spanning the globe —
               that’s the essence of Teen Patti Master! Every round brings the
@@ -184,7 +185,7 @@ const Home = () => {
               or take the reins and create your private space, inviting friends
               for a gaming showdown.
             </p>
-            <p>
+            <p className="ds-p">
               But what sets Teen Patti Master apart from the rest? It is not
               just about the enjoyment but about ensuring your gaming journey is
               safe, secure, and fair. Our platform utilises advanced
@@ -195,7 +196,7 @@ const Home = () => {
               breeze with our various payment methods, including credit cards,
               debit cards, e-wallets, and bank transfers.
             </p>
-            <p>
+            <p className="ds-p">
               And the best part? There are plenty of ways to get free chips!
               Whether you are ticking off daily tasks, bringing in friends,
               giving the wheel a spin, or catching some videos, the
@@ -205,21 +206,21 @@ const Home = () => {
               you stack up and revel in your achievements within the global Teen
               Patti community.
             </p>
-            <h2>Ready, Set, Play: Teen Patti Game Download</h2>
-            <p>
+            <h2 className="ds-h2">Ready, Set, Play: Teen Patti Game Download</h2>
+            <p className="ds-p">
               Ready to explore Teen Patti Master? Begin your thrilling Teen
               Patti adventure with a simple and stress-free app download.
               Regardless of whether you are an Android or iOS user, our platform
               ensures a flawless experience across all your devices, allowing
               you to play at your leisure anytime, anywhere.
             </p>
-            <p>
+            <p className="ds-p">
               Wondering why our Teen Patti Master app stands out? It’s your
               gateway to exclusive offers, bonuses, and a seamlessly enhanced
               gaming experience. No disruptions or waiting – the app enables you
               to dive into the Teen Patti Master universe effortlessly.
             </p>
-            <p>
+            <p className="ds-p">
               For tech-savvy players, you can download the Teen Patti Master APK
               file directly from the website and manually install it on your
               Android device. For iOS users, simply download the .ipa file from
@@ -227,7 +228,7 @@ const Home = () => {
               and for Android users, remember to enable the unknown sources
               option in your device settings for a successful download.
             </p>
-            <p>
+            <p className="ds-p">
               Once you have the app, enjoy the best features of Teen Patti
               Master – a responsive user interface, realistic graphics,
               animations, and immersive sound effects. Dive into multiplayer
@@ -238,8 +239,8 @@ const Home = () => {
               out on the latest updates, promotions, and events – the app keeps
               you in the loop with timely notifications!
             </p>
-            <h2>The Ultimate Teen Patti Online Game</h2>
-            <p>
+            <h2 className="ds-h2">The Ultimate Teen Patti Online Game</h2>
+            <p className="ds-p">
               What sets Teen Patti Master apart from being a game is its role as
               a complete online gaming experience. Choose from various game
               modes such as classic, variations, tournaments, and private
@@ -247,7 +248,7 @@ const Home = () => {
               game or wish to explore variations like AK47, Joker, Muflis,
               Hukam, and more, Teen Patti Master caters to every gaming palate.
             </p>
-            <p>
+            <p className="ds-p">
               What truly elevates the experience is the opportunity to
               participate in tournaments. It is more than just a chance to
               showcase your skills; it is a journey where gaming meets
@@ -255,7 +256,7 @@ const Home = () => {
               against the best players globally, relishing the thrill of
               victory.
             </p>
-            <p>
+            <p className="ds-p">
               Teen Patti Master is more than a live game; it is your go-to
               destination for the ultimate online gaming adventure. It
               seamlessly combines fun, ease, and rewards while ensuring safety,

@@ -15,7 +15,7 @@ const Footer = () => {
 
       <section className="copyright-section">
         <div className="containers">
-          <div className="flex justify-between items-center">
+          <div className="copyright-content">
             <img
               src="/footer-logo.webp"
               alt="Logo"

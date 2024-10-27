@@ -24,6 +24,55 @@
   .nav-section {
     display: none;
   }
+
+  .main-heading {
+    font-size: 4.2rem;
+  }
+
+  .banner-section {
+    padding: 10rem 2.5rem 0 2.5rem;
+  }
+
+  .our-advantage-section {
+    padding: 50px 15px 50px 15px;
+  }
+
+  .adv-card {
+    gap: 1rem;
+  }
+
+  .adv-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .adv-card p {
+    font-size: 1.2rem;
+  }
+
+  .adv-card {
+    padding: 20px 10px 20px 10px;
+  }
+
+  .bonus-section {
+    padding: 50px 25px 25px 25px;
+  }
+
+  .stats-card {
+    flex: 0 0 48.9%;
+  }
+
+  .stats-card:first-child,
+  .stats-card:nth-child(2) {
+    margin-bottom: 2rem;
+  }
+
+  .welcome-section {
+    padding: 35px 15px 35px 15px;
+  }
+
+  .footer {
+    padding: 50px 15px 40px 15px;
+  }
 }
 
 /*****************/
@@ -50,4 +99,131 @@
     height: 1.5rem;
     width: 1.5rem;
   }
+
+  .main-heading {
+    font-size: 3.2rem;
+  }
+
+  .banner-section {
+    padding: 7rem 2rem 0 2rem;
+  }
+
+  .main-heading {
+    line-height: normal;
+  }
+
+  .our-advantage-section {
+    padding: 25px 15px 25px 15px;
+  }
+
+  .adv-head {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .text {
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+
+  .adv-card h3 {
+    font-size: 1.8rem;
+  }
+
+  .adv-card p {
+    font-size: 1.6rem;
+  }
+
+  .adv-card {
+    padding: 20px 20px 20px 20px;
+  }
+
+  .adv-card-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .bonus-section {
+    padding: 50px 20px 50px 20px;
+  }
+
+  .bonus-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .bonus-content {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .bonus-section h2 {
+    text-align: center;
+    line-height: 4.2rem;
+  }
+
+  .bonus-description {
+    align-items: center;
+  }
+
+  .text-left {
+    text-align: center;
+  }
+
+  .stats-card:first-child,
+  .stats-card:nth-child(2) {
+    margin-bottom: 0;
+  }
+
+  .flex-direction-col {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2rem;
+  }
+
+  .stats-section {
+    padding: 2rem 1.5rem 3.2rem 1.5rem;
+  }
+
+  .welcome-section {
+    padding: 15px 15px 0px 15px;
+  }
+
+  .ds-h2  {
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+  }
+
+  .ds-p {
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+
+  .new-gap {
+    gap: 1.5rem;
+  }
+
+  .footer {
+    padding: 20px 15px 20px 15px;
+  }
+
+  .footer-nav {
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+  }
+
+  .footer-logo {
+    text-align: center;
+    margin-right: -3rem;
+  }
+
+  .copyright-content {
+    flex-direction: column;
+  }
+
+  .copy-text {
+    text-align: center;
+  }
+
 }

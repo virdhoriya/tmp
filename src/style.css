@@ -1,9 +1,41 @@
-/* Refactoring the css */
-
 /* General styles */
 
 .main-section {
   padding: 1rem 1.5rem;
+}
+
+.containers {
+  max-width: 140rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.description {
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--white);
+  font-weight: 300;
+}
+
+.btn2 {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 1.2rem 4rem;
+  background-color: var(--red);
+  color: white;
+  font-weight: 500;
+  border-radius: 0.4rem;
+}
+
+.btn2-dark {
+  background-color: var(--primary-color);
+}
+
+
+.line {
+  height: 6px;
+  width: 100%;
+  background-color: var(--red);
 }
 
 /*  header */
@@ -87,56 +119,7 @@
   letter-spacing: 1.1px;
 }
 
-
-
-
-
-
-
-
-
-
-.containers {
-  max-width: 140rem;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.description {
-  text-align: center;
-  font-size: 1.8rem;
-  color: var(--white);
-}
-
-.btn2 {
-  display: inline-block;
-  text-transform: uppercase;
-  padding: 1.2rem 4rem;
-  background-color: var(--red);
-  color: white;
-  font-weight: 500;
-  border-radius: 0.4rem;
-}
-
-.btn2-dark {
-  background-color: var(--primary-color);
-}
-
-.line {
-  height: 6px;
-  width: 100%;
-  background-color: var(--red);
-}
-
-/*  header */
-
-
-
-
-
-
-
-/* banner section */
+/* home - banner */
 
 .banner-section {
   padding: 17rem 1.5rem 0 1.5rem;
@@ -154,7 +137,7 @@
   margin: 0.8rem 0 1.6rem 0;
   text-align: center;
   font-size: 6.5rem;
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -162,11 +145,6 @@
 .headin-description {
   max-width: 84rem;
   margin: 0 auto;
-}
-
-.btn-container {
-  text-align: center;
-  padding: 2rem 0 0 0;
 }
 
 .banner-img-container {
@@ -179,7 +157,7 @@
   width: auto;
 }
 
-/* our advantage */
+/* home - our advantage */
 
 .our-advantage-section {
   padding: 7rem 1.5rem;
@@ -191,6 +169,7 @@
   flex-direction: column;
   gap: 2rem;
 }
+
 .our {
   color: var(--primary-color) !important;
 }
@@ -228,12 +207,13 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  transition-duration: all 0.3s;
+  transition: all 0.3s;
 }
 
 .adv-card:hover {
   animation: up-down 2s infinite;
 }
+
 
 @keyframes up-down {
   0% {
@@ -257,13 +237,31 @@
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
+  line-height: 2.2rem;
   color: var(--primary-color);
 }
 
-/* bonus section */
+.adv-card h3:hover {
+  color: var(--red);
+}
+
+.adv-card p {
+  color: #737373;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* home - bonus section */
 
 .bonus-section {
   padding: 7rem 1.5rem;
+}
+
+.bonus-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .item-1,
@@ -272,7 +270,8 @@
 }
 
 .bonus-img {
-  max-width: 56.7rem;
+  max-width: 90%;
+  display: inline-block;
   height: auto;
 }
 
@@ -288,6 +287,13 @@
 
 .text-left {
   text-align: left;
+}
+
+.bonus-description {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: start;
 }
 
 /* stats section */
@@ -328,8 +334,9 @@
 
 .welcome-img {
   display: inline-block;
-  min-height: 36.1rem;
+  height: auto;
   width: 100%;
+  border-radius: 6px;
 }
 
 /* partners section */
@@ -346,14 +353,14 @@
 
 /* description section */
 
-.description-section h2 {
+.ds-h2 {
   font-size: 4rem;
   font-weight: 700;
   color: var(--primary-color);
   text-transform: uppercase;
 }
 
-.description-section p {
+.ds-p {
   color: #737373;
   font-size: 1.8rem;
 }
@@ -386,8 +393,14 @@
 
 .footer-logo {
   display: inline-block;
-  width: 25rem;
-  height: 5.2rem;
+  max-width: 25rem;
+  height: auto;
+}
+
+.copyright-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* about */
