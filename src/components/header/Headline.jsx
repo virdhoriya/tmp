@@ -6,7 +6,7 @@ const Headline = () => {
           <img src="/logo.png" alt="logo" className="logo-img" loading="lazy" />
           <a
             href="vite.svg"
-            download="logo.png"
+            download="TeenPattiMaster"
             className="download-btn"
             title="download"
           >

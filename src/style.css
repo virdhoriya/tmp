@@ -348,7 +348,9 @@
 .partner-logo {
   display: inline-block;
   height: 13.2rem;
-  width: 26.4rem;
+  /* width: 26.4rem; */
+  min-width: 20%;
+  max-width: 20%;
 }
 
 /* description section */

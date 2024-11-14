@@ -1,7 +1,29 @@
+import { useRef, useState } from "react";
+import { IoIosArrowBack } from "react-icons/io";
+
 const Home = () => {
+
+  const sliderRef = useRef(null);
+  const [currentOffset, setCurrentOffset] = useState(0);
+  const logoWidth = '100%';
+
+  const handlePrev = () => {
+    if (currentOffset < 0) {
+      setCurrentOffset((prev) => prev + logoWidth);
+    }
+  };
+
+  const handleNext = () => {
+    if (
+      sliderRef.current &&
+      Math.abs(currentOffset) < sliderRef.current.scrollWidth - logoWidth * 4
+    ) {
+      setCurrentOffset((prev) => prev - logoWidth);
+    }
+  };
+
   return (
     <main>
-
       <section className="banner-section">
         <div className="containers">
           <div className="flex flex-col gap-8">
@@ -128,20 +150,33 @@ const Home = () => {
       <section className="partners-section">
         <div className="containers">
           <div className="flex flex-col gap-8">
-            <h2>
-              <span className="our">our </span>partners
-            </h2>
-            <p className="text text-left">
-              Real players, real cash, real fun. Teen Patti Master is the
-              <br />
-              online Teen Patti game you’ve been waiting for.
-            </p>
             <div className="flex justify-between items-center">
+              <div className="flex-[0_0_50%]">
+                <h2>
+                  <span className="our">our </span>partners
+                </h2>
+                <p className="text text-left">
+                  Real players, real cash, real fun. Teen Patti Master is the
+                  <br />
+                  online Teen Patti game you’ve been waiting for.
+                </p>
+              </div>
+              <div className="flex justify-end items-end gap-4">
+                <button className="h-[3.6rem] w-[3.6rem] bg-[var(--primary-color)] rounded-lg p-[0.6rem] hover:bg-[var(--red)] transition duration-200" onClick={handlePrev}>
+                  <IoIosArrowBack className="inline-block h-full w-full fill-white stroke-white" />
+                </button>
+                <button className="h-[3.6rem] w-[3.6rem] bg-[var(--primary-color)] rounded-lg p-[0.6rem] hover:bg-[var(--red)] transition duration-200" onClick={handleNext}>
+                  <IoIosArrowBack className="inline-block h-full w-full fill-white stroke-white" />
+                </button>
+              </div>
+            </div>
+            <div className="flex justify-between items-center overflow-hidden">
               <img src="/paytm.webp" alt="Logo" className="partner-logo" />
               <img src="/phone-pay.webp" alt="Logo" className="partner-logo" />
               <img src="/paypal.webp" alt="Logo" className="partner-logo" />
               <img src="/gpay.webp" alt="Logo" className="partner-logo" />
               <img src="/upi.webp" alt="Logo" className="partner-logo" />
+              <img src="/usdt.webp" alt="Logo" className="partner-logo" />
             </div>
           </div>
         </div>
@@ -175,7 +210,9 @@ const Home = () => {
               substantial prizes. Exclusive bonuses, promotions, and events add
               an extra layer of excitement to your gaming experience.
             </p>
-            <h2 className="ds-h2">Unleashing the Real Cash Excitement of the Teen Patti Game</h2>
+            <h2 className="ds-h2">
+              Unleashing the Real Cash Excitement of the Teen Patti Game
+            </h2>
             <p className="ds-p">
               Imagine you are at a virtual table, holding three cards, partaking
               in a high-stakes cash game with real players spanning the globe —
@@ -206,7 +243,9 @@ const Home = () => {
               you stack up and revel in your achievements within the global Teen
               Patti community.
             </p>
-            <h2 className="ds-h2">Ready, Set, Play: Teen Patti Game Download</h2>
+            <h2 className="ds-h2">
+              Ready, Set, Play: Teen Patti Game Download
+            </h2>
             <p className="ds-p">
               Ready to explore Teen Patti Master? Begin your thrilling Teen
               Patti adventure with a simple and stress-free app download.
