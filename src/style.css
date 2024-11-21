@@ -21,8 +21,8 @@
   display: inline-block;
   text-transform: uppercase;
   padding: 1.2rem 4rem;
-  background-color: var(--red);
-  color: white;
+  background-color: var(--secondary);
+  color: var(--white);
   font-weight: 500;
   border-radius: 0.4rem;
 }
@@ -48,7 +48,7 @@
 
 .download-btn {
   display: inline-block;
-  background-color: var(--red);
+  background-color: var(--secondary);
   color: var(--white);
   font-size: 1.5rem;
   font-weight: 500;
@@ -72,8 +72,8 @@
   height: 100%;
   width: 0;
   z-index: 5;
-  background-color: #041b5f;
-  transition: width 0.3s;
+  background-color: var(--primary);
+  transition: width 0.4s;
 }
 
 .download-btn:hover::before {
@@ -89,14 +89,18 @@
 
 .nav-section {
   padding: 0 1.5rem;
-  background-color: var(--primary-color);
+  background-color: var(--primary);
 }
 
 .nav-container {
-  color: #fff;
+  color: var(--white);
   display: flex;
   align-items: center;
   gap: 4rem;
+}
+
+.nav-container li:hover .nav-item span{
+  color: var(--secondary);
 }
 
 .nav-item {
@@ -117,6 +121,7 @@
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1.1px;
+  transition: all .1s;
 }
 
 /* home - banner */
@@ -142,7 +147,7 @@
   text-transform: uppercase;
 }
 
-.headin-description {
+.heading-description {
   max-width: 84rem;
   margin: 0 auto;
 }
@@ -171,7 +176,7 @@
 }
 
 .our {
-  color: var(--primary-color) !important;
+  color: var(--primary) !important;
 }
 
 .adv-head {
@@ -183,7 +188,7 @@
 }
 
 .text {
-  color: #737373;
+  color: var(--gray);
   font-size: 1.8rem;
   text-align: center;
 }

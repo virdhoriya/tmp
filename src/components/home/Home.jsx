@@ -29,7 +29,7 @@ const Home = () => {
           <div className="flex flex-col gap-8">
             <h1 className="main-heading">Teen Patti Master</h1>
 
-            <div className="headin-description">
+            <div className="heading-description">
               <p className="description">
                 Teen Patti Master is easy, user-friendly and packed with a
                 healthy dose of challenges that will keep you coming back for
