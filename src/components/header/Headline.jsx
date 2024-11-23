@@ -4,18 +4,25 @@ const Headline = () => {
       <div className="containers">
         <div className="flex justify-between items-center">
           <img src="/logo.png" alt="logo" className="logo-img" loading="lazy" />
-          <a
-            href="TeenPattiMaster.apk"
-            download="TeenPattiMaster.apk"
-            className="download-btn"
-            title="download"
-            aria-label="download"
-          >
-            <span className="z-10">
-              <img src="/download-icon.png" alt="download" className="icon" />
-            </span>
-            <span className="z-10">downlaod</span>
-          </a>
+          <div className="flex items-center lg:gap-16">
+            <a
+              href="TeenPattiMaster.apk"
+              download="TeenPattiMaster.apk"
+              className="download-btn"
+              title="download"
+              aria-label="download"
+            >
+              <span className="z-10">
+                <img src="/download-icon.png" alt="download" className="icon" />
+              </span>
+              <span className="z-10">downlaod</span>
+            </a>
+            <div className="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
