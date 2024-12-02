@@ -4,12 +4,14 @@ import About from "./components/about/About";
 import Faq from "./components/faq/Faq.jsx";
 import Games from "./components/games/Games.jsx";
 import Footer from "./components/footer/Footer";
+import ScrollToTop from "./components/.../ScrollToTop.jsx";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 const App = () => {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />

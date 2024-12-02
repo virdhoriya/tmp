@@ -1,0 +1,152 @@
+/* General styles */
+
+.main-section {
+  padding: 1rem 1.5rem;
+}
+
+.containers {
+  max-width: 140rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* header - headline */
+
+.logo-img {
+  max-width: 6.5rem;
+  max-height: 6.5rem;
+  border-radius: 0.4rem;
+}
+
+.download-btn {
+  display: inline-block;
+  background-color: var(--secondary);
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.download-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  z-index: 5;
+  background-color: var(--primary);
+  transition: width 0.4s;
+}
+
+.download-btn:hover::before {
+  width: 100%;
+}
+
+.icon {
+  display: inline-block;
+  height: 2.4rem;
+  width: 2.4rem;
+  filter: invert(1);
+}
+
+.hamburger {
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  display: none;
+}
+
+.hamburger span {
+  display: inline-block;
+  width: 2.5rem;
+  height: 4px;
+  background-color: var(--primary);
+  border-radius: 1px;
+}
+
+.mobile-menu-cover {
+  position: fixed;
+  inset: 0;
+  display: block;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 997;
+}
+
+.mobile-menu-container {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+  padding: 2rem;
+  min-width: 40rem;
+  background-color: white;
+  transition: all 0.3s;
+  transform: translateX(100%);
+  overflow-y: hidden;
+}
+
+.animate-mobile-nav {
+  transform: translateX(0);
+}
+
+.mobile-nav-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.mobile-nav-item:hover span,
+.active-mobile-nav span {
+  color: var(--primary) !important;
+}
+
+.mobile-nav-item:hover .mobile-nav-icon,
+.active-mobile-nav .mobile-nav-icon {
+  fill: var(--primary);
+}
+
+.mobile-nav-item span {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  text-transform: uppercase;
+  color: var(--gray);
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.2s;
+}
+
+.mobile-nav-icon {
+  transition: all 0.2s;
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  fill: var(--gray);
+}
+
+.gap-xl {
+    gap: 7rem;
+}

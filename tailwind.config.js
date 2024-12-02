@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       screens: {
-        'lg': { max: "64em" },
-        'md': { max: "47.93em" },
+        'lg': { 'max': "64em" },
+        'md': { 'max': "47.93em" },
       },
     },
   },

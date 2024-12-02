@@ -96,10 +96,9 @@
     max-width: 33%;
   }
 
-  .hanburger {
-    display: block;
+  .hamburger {
+    display: flex;
   }
-
 }
 
 /*****************/
@@ -217,7 +216,7 @@
     padding: 2rem 1.5rem 3.2rem 1.5rem;
   }
 
-  .ds-h2  {
+  .ds-h2 {
     font-size: 3.2rem;
     line-height: 3.8rem;
   }
@@ -278,4 +277,7 @@
     max-width: 50%;
   }
 
+  .gap-xl {
+    gap: 2.5rem;
+  }
 }

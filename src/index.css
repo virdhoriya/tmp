@@ -24,11 +24,8 @@ body {
 }
 
 :root {
-  --primary-color: #041b5f;
-  --white: #fff;
-  --red: #ed0908;
-  --gray: #737373;
-
   --primary: #041b5f;
   --secondary: #ed0908;
+  --gray: #737373;
+  --white: #fff;
 }

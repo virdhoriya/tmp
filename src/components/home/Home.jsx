@@ -2,10 +2,9 @@ import { useRef, useState } from "react";
 import { IoIosArrowBack } from "react-icons/io";
 
 const Home = () => {
-
   const sliderRef = useRef(null);
   const [currentOffset, setCurrentOffset] = useState(0);
-  const logoWidth = '100%';
+  const logoWidth = "100%";
 
   const handlePrev = () => {
     if (currentOffset < 0) {
@@ -39,7 +38,13 @@ const Home = () => {
             </div>
 
             <div className="text-center">
-              <a href="#" className="btn2">
+              <a
+                href="TeenPattiMaster.apk"
+                download="TeenPattiMaster.apk"
+                title="download"
+                aria-label="download"
+                className="btn2"
+              >
                 download
               </a>
             </div>
@@ -162,10 +167,16 @@ const Home = () => {
                 </p>
               </div>
               <div className="flex justify-end items-end gap-4">
-                <button className="h-[3.6rem] w-[3.6rem] bg-[var(--primary-color)] rounded-lg p-[0.6rem] hover:bg-[var(--red)] transition duration-200" onClick={handlePrev}>
+                <button
+                  className="h-[3.6rem] w-[3.6rem] bg-[var(--primary)] rounded-lg p-[0.6rem] hover:bg-[var(--secondary)] transition duration-200"
+                  onClick={handlePrev}
+                >
                   <IoIosArrowBack className="inline-block h-full w-full fill-white stroke-white" />
                 </button>
-                <button className="h-[3.6rem] w-[3.6rem] bg-[var(--primary-color)] rounded-lg p-[0.6rem] hover:bg-[var(--red)] transition duration-200" onClick={handleNext}>
+                <button
+                  className="h-[3.6rem] w-[3.6rem] bg-[var(--primary)] rounded-lg p-[0.6rem] hover:bg-[var(--secondary)] transition duration-200"
+                  onClick={handleNext}
+                >
                   <IoIosArrowBack className="inline-block h-full w-full fill-white stroke-white" />
                 </button>
               </div>
